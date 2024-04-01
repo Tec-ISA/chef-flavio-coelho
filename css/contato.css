@@ -1,0 +1,110 @@
+/* Estilo geral da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    /*Aqui estou aplicando uma imagem de fundo para a pag nao ficar sem vida */
+    color: #000;
+    background-color: #F7F7F7;
+}
+
+.interface {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.logo-chef {
+    width: 15%;
+}
+
+.menu {
+    width: 50%;
+    
+}
+
+.menu nav a {
+    color: #5C2A2D;
+    text-decoration: none;
+    padding-right: 10%;
+    font-weight: 500;
+}
+
+
+/* MAIN */
+
+main {
+    margin: auto;
+    display: flex;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #F7F7F7;
+    color: #5C2A2D;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.rodape {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-rodape {
+    padding: 10px;
+}
+
+
+.menu-rodape nav a {
+    font-size: 14px;
+    width: 600px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: #5C2A2D;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+.logo-rodape {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.dev {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dev-tecisa{ 
+    font-size: 12px;
+    text-align: center;
+}
+
+.tecisa {
+    width: 100%;
+}
+
+
+
+            
