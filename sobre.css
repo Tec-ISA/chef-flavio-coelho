@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    padding:0;
+    color: #242424;
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+  }
+
+  header .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+ header .logo-1{
+    width: 11.5%;
+  }
+
+ header .content-2{
+    width: 50%;
+  }
+
+ header .content-2 nav a{
+    color: #5C2A2D;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 10%;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  header .content-2 nav a:hover{
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+main {
+    margin: auto;
+}
+
+main .container {
+    width: 100%;
+    height: 150vh;
+    background-image: url(assets/images/Chef-Flavio-Coelho/chef-flavio-coelho.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 0), rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.7), rgba(247, 247, 247, 1));
+}
+
+
+main .content {
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #5C2A2D;
+    padding: 300px;
+    padding-left: 60%;
+}
+
+
+footer {
+    background-color: #F7F7F7;
+    color: #5C2A2D;
+    display: flex;
+    justify-content: space-between; 
+}
+
+footer .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-1 {
+    padding: 10px;
+}
+
+
+footer .content-1 nav a {
+    font-style: italic;
+    font-size: 14px;
+    width: 600px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: #5C2A2D;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+footer .content-1 nav a:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer .logo-1 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+footer .content-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .text{ 
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer .logo-2 {
+    width: 100%;
+}
