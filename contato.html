@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="contato.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
 
     <header>
 
-        <div class="interface">
+        <div class="container">
 
-            <div class="logo">
+            <div class="content-1">
                 <a href="index.html">
-                    <img class="logo-chef" src="assets/images/logo/logo-completo.jpg" alt="logo-chef-flavio-coelho">
+                    <img class="logo-1" src="assets/images/logo/logo-completo.jpg" alt="logo-chef-flavio-coelho">
                 </a>
             </div>
 
-            <div class="menu">
+            <div class="content-2">
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="sobre.html">Sobre o Chef</a>
@@ -40,12 +40,44 @@
 
     </header>
 
-    <main></main>
+    <main>
+        <section class="container">
+            <div class="content-1">
+                <h2 class="title">Contato</h2>
+                
+                <form action="">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    
+                    <label for="data_festa">Data da Festa:</label><br>
+                    <input type="date" id="data_festa" name="data_festa" required><br>
+                    
+                    <label for="num_convidados">Número de convidados:</label><br>
+                    <input type="number" id="num_convidados" name="num_convidados" required><br>
+                    
+                    <label for="local_evento">Local do Evento:</label><br>
+                    <input type="text" id="local_evento" name="local_evento" required><br>
+                    
+                    <label for="horario_inicio">Horário de Início:</label><br>
+                    <input type="time" id="horario_inicio" name="horario_inicio" required><br>
+                    
+                    <label for="email">E-mail de Contato:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="telefone">Telefone para Contato:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br>
+
+                    <button onclick="sendToWhatsapp()">Enviar ao WhatsApp do Chef</button>
+                    
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <section class="rodape">
+        <section class="container">
 
-            <div class="menu-rodape">
+            <div class="content-1">
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="sobre.html">Sobre o Chef</a>
@@ -54,19 +86,21 @@
                 </nav>
             </div>
 
-            <div class="rodape-logo-chef">
-                <img class="logo-rodape" src="assets/images/logo/logo-simples.PNG" alt="logo-chef-flavio-coelho">
+            <div class="content-2">
+                <img class="logo-1" src="assets/images/logo/logo-simples.PNG" alt="logo-chef-flavio-coelho">
             </div>
 
-            <div class="dev">
-                <p class="dev-tecisa">Desenvolvimento</p>
+            <div class="content-3">
+                <p class="text">Desenvolvimento</p>
                 <a href="https://github.com/BryanMelo95" target="_blank">
-                    <img class="tecisa" src="assets/images/tecisa-logo.png" alt="tecisa">
+                    <img class="logo-2" src="assets/images/tecisa-logo.png" alt="tecisa">
                 </a>
             </div>
 
         </section>
     </footer>
+
+    <script src="assets/js/index.js"></script>
 
 </body>
 

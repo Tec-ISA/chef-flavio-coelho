@@ -1,65 +1,155 @@
-/* Estilo geral da pagina */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-
-body {
-    /*Aqui estou aplicando uma imagem de fundo para a pag nao ficar sem vida */
-    color: #000;
+    color: #242424;
     background-color: #F7F7F7;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-.interface {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+}
+
+header .container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
 
-header {
-    position: relative;
-    width: 100%;
-    background-color: #F7F7F7;
+header .logo-1 {
+    width: 11.5%;
 }
 
-.logo-chef {
-    width: 15%;
-}
-
-.menu {
+header .content-2 {
     width: 50%;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.menu nav a {
+header .content-2 nav a {
     color: #5C2A2D;
     text-decoration: none;
+    font-size: 20px;
     padding-right: 10%;
     font-weight: 500;
+    font-style: italic;
 }
 
-
-/* MAIN */
+header .content-2 nav a:hover {
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 main {
-    margin: auto;
+    background-color: #FFF;
+}
+
+main .container {
     display: flex;
+    justify-content: center;
+    background-image: url(assets/images/Brunch/brunch\ \(11\).JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;    
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 
-/* FOOTER */
+main .title {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F7F7F7;
+
+}
+
+
+main .form {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .content-1{
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-shadow: #000;
+}
+
+button[onclick] {
+    background-color: #4caf50;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+button[onclick]:hover {
+    background-color: #45a049;
+}
+
 footer {
     background-color: #F7F7F7;
     color: #5C2A2D;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.rodape {
+footer .container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -67,13 +157,11 @@ footer {
     justify-content: center;
 }
 
-.menu-rodape {
-    padding: 10px;
-}
 
-
-.menu-rodape nav a {
-    font-size: 14px;
+footer .content-1 nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 16px;
     width: 600px;
     font-weight: 500;
     display: flex;
@@ -83,28 +171,30 @@ footer {
     padding-top: 12px;
 }
 
-.logo-rodape {
-    width: 15%;
-    display: flex;
-    align-items: center;
+footer .content-1 nav a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.dev {
+footer .logo-1 {
+    padding-left: 10%;
+    width: 15%;
+
+}
+
+footer .content-3 {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.dev-tecisa{ 
+footer .text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
     font-size: 12px;
     text-align: center;
 }
 
-.tecisa {
+footer .logo-2 {
     width: 100%;
 }
-
-
-
-            

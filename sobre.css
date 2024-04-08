@@ -36,19 +36,20 @@ body{
 
  header .content-2{
     width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
  header .content-2 nav a{
     color: #5C2A2D;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     padding-right: 10%;
     font-weight: 500;
     font-style: italic;
   }
 
   header .content-2 nav a:hover{
-    font-size: 18px;
+    font-size: 22px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
@@ -58,10 +59,9 @@ main {
 
 main .container {
     width: 100%;
-    height: 150vh;
-    background-image: url(assets/images/Chef-Flavio-Coelho/chef-flavio-coelho.jpg);
+    height: 140vh;
+    background-image: url(assets/images/Chef-Flavio-Coelho/chef-flavio-coelho\ \(1\).jpg);
     background-size: cover;
-    background-position:center;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -73,18 +73,31 @@ main .container::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 0), rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.7), rgba(247, 247, 247, 1));
+    background: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 0), rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0.9), rgba(247, 247, 247, 1));
 }
 
 
 main .content {
-    font-size: 20px;
     position: relative;
     z-index: 1;
-    text-align: center;
     color: #5C2A2D;
-    padding: 300px;
+    padding: 150px;
     padding-left: 60%;
+}
+
+main .title-1 {
+    font-size: 60px;
+    color: #5C2A2D;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .paragraf-1 {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
 }
 
 
