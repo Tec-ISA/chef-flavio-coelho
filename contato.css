@@ -199,3 +199,25 @@ footer .text {
 footer .logo-2 {
     width: 100%;
 }
+
+.floating-buttons {
+    position: fixed;
+    bottom: -1000px; /* Inicialmente posicionado abaixo do visível */
+    right: 20px;
+    z-index: 1000;
+    transition: bottom 1s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons.show {
+    bottom: 20px; /* Mostra os botões quando a classe 'show' é adicionada */
+  }
+  
+  .floating-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons a:hover {
+    transform: scale(1.5); /* Aumenta em 10% quando passa o mouse */
+  }

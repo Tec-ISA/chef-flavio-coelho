@@ -1,57 +1,62 @@
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
     color: #242424;
     background-color: #F7F7F7;
     font-family: sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
-  }
-  
-  h1,h2,h3,h4,h5,h6{
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
     color: #000;
-  }
+}
 
-  header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #F7F7F7;
     z-index: 1000;
-  }
+}
 
-  header .container{
+header .container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-  }
+}
 
- header .logo-1{
+header .logo-1 {
     width: 11.5%;
-  }
+}
 
- header .content-2{
+header .content-2 {
     width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+}
 
- header .content-2 nav a{
+header .content-2 nav a {
     color: #5C2A2D;
     text-decoration: none;
     font-size: 20px;
     padding-right: 10%;
     font-weight: 500;
     font-style: italic;
-  }
+}
 
-  header .content-2 nav a:hover{
+header .content-2 nav a:hover {
     font-size: 22px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
+}
 
 main {
     margin: auto;
@@ -89,7 +94,7 @@ main .title-1 {
     font-size: 60px;
     color: #5C2A2D;
     font-style: italic;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main .paragraf-1 {
@@ -105,10 +110,10 @@ footer {
     background-color: #F7F7F7;
     color: #5C2A2D;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-footer .container{
+footer .container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -133,7 +138,7 @@ footer .content-1 nav a {
     padding-top: 12px;
 }
 
-footer .content-1 nav a:hover{
+footer .content-1 nav a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -150,7 +155,7 @@ footer .content-3 {
     justify-content: center;
 }
 
-footer .text{ 
+footer .text {
     font-style: italic;
     font-size: 14px;
     text-align: center;
@@ -158,4 +163,31 @@ footer .text{
 
 footer .logo-2 {
     width: 100%;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: -1000px;
+    /* Inicialmente posicionado abaixo do visível */
+    right: 20px;
+    z-index: 1000;
+    transition: bottom 1s ease-in-out;
+    /* Adiciona transição suave */
+}
+
+.floating-buttons.show {
+    bottom: 20px;
+    /* Mostra os botões quando a classe 'show' é adicionada */
+}
+
+.floating-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    /* Adiciona transição suave */
+}
+
+.floating-buttons a:hover {
+    transform: scale(1.5);
+    /* Aumenta em 10% quando passa o mouse */
 }
