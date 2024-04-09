@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+}
+
+header .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo-1 {
+    width: 11.5%;
+}
+
+header .content-2 {
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .content-2 nav a {
+    color: #5C2A2D;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+header .content-2 nav a:hover {
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    margin: auto;
+}
+
+main .container {
+    width: 100%;
+    height: 130vh;
+    background-image: url(../images/Chef-Flavio-Coelho/chef-flavio-coelho2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 0), rgba(247, 247, 247, 0.1), rgba(247, 247, 247, 0.9), rgba(247, 247, 247, 1));
+}
+
+
+main .content {
+    position: relative;
+    z-index: 1;
+    color: #5C2A2D;
+    padding: 150px;
+    padding-left: 60%;
+}
+
+main .title-1 {
+    font-size: 60px;
+    color: #5C2A2D;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .paragraf-1 {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #F7F7F7;
+    color: #5C2A2D;
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+footer .container {
+    max-width: 1440px; /* Reduz a largura máxima */
+    width: 100%; /* Usa toda a largura disponível */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+footer .content-1 nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5C2A2D;
+    text-decoration: none; 
+    padding: 5px 5px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Borda arredondada */
+    transition: font-size 0.3s, box-shadow 0.3s; /* Adiciona transição para a mudança de tamanho da fonte e sombra */
+}
+
+footer .content-1 nav a:hover {
+    font-size: 16px; /* Aumenta o tamanho da fonte no hover */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona sombra no hover */
+}
+
+footer .content-3 {
+    display: flex;
+    align-items: center;
+}
+
+footer .text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 10px; /* Espaçamento entre o texto e a imagem */
+}
+
+
+footer .logo-2 {
+    width: 60px; /* Reduz o tamanho da imagem */
+    border-radius: 10px; /* Torna a imagem circular */
+}
+  
+  .floating-buttons {
+    position: fixed;
+    bottom: -1000px; /* Inicialmente posicionado abaixo do visível */
+    right: 20px;
+    z-index: 1000;
+    transition: bottom 1s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons.show {
+    bottom: 20px; /* Mostra os botões quando a classe 'show' é adicionada */
+  }
+  
+  .floating-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons a:hover {
+    transform: scale(1.5); /* Aumenta em 10% quando passa o mouse */
+  }

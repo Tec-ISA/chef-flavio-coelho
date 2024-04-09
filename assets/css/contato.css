@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+}
+
+header .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo-1 {
+    width: 11.5%;
+}
+
+header .content-2 {
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .content-2 nav a {
+    color: #5C2A2D;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+header .content-2 nav a:hover {
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    background-color: #FFF;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/Brunch/brunch\ \(11\).JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;    
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+
+main .title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F7F7F7;
+
+}
+
+
+main .form {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .content-1{
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-shadow: #000;
+}
+
+button[type] {
+    background-color: #4caf50;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+button[type]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #F7F7F7;
+    color: #5C2A2D;
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+footer .container {
+    max-width: 1440px; /* Reduz a largura máxima */
+    width: 100%; /* Usa toda a largura disponível */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+footer .content-1 nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5C2A2D;
+    text-decoration: none; 
+    padding: 5px 5px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Borda arredondada */
+    transition: font-size 0.3s, box-shadow 0.3s; /* Adiciona transição para a mudança de tamanho da fonte e sombra */
+}
+
+footer .content-1 nav a:hover {
+    font-size: 16px; /* Aumenta o tamanho da fonte no hover */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona sombra no hover */
+}
+
+footer .content-3 {
+    display: flex;
+    align-items: center;
+}
+
+footer .text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 10px; /* Espaçamento entre o texto e a imagem */
+}
+
+
+footer .logo-2 {
+    width: 60px; /* Reduz o tamanho da imagem */
+    border-radius: 10px; /* Torna a imagem circular */
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: -1000px; /* Inicialmente posicionado abaixo do visível */
+    right: 20px;
+    z-index: 1000;
+    transition: bottom 1s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons.show {
+    bottom: 20px; /* Mostra os botões quando a classe 'show' é adicionada */
+  }
+  
+  .floating-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Adiciona transição suave */
+  }
+  
+  .floating-buttons a:hover {
+    transform: scale(1.5); /* Aumenta em 10% quando passa o mouse */
+  }
