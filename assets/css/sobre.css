@@ -27,36 +27,53 @@ header {
 }
 
 header .container {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    padding: 0.5rem 6rem;
     align-items: center;
-    justify-content: center;
+}
+
+header .content-1 {
+    display: flex;
+    align-items: center;
+
 }
 
 header .logo-1 {
-    width: 10%;
+    width: 5rem;
 }
 
 header .content-2 {
-    width: 50%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
-header .content-2 nav a {
-    color: #5C2A2D;
+header .content-2 ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+header .nav-item {
+    margin: 0 15px;
+}
+
+header .nav-link {
     text-decoration: none;
-    font-size: 20px;
-    padding-right: 10%;
+    font-size: 1.15rem;
+    color: #5C2A2D;
     font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
 }
 
-header .content-2 nav a:hover {
-    font-size: 22px;
+/* Adicionando efeito de sombra no hover */
+header .nav-item:hover .nav-link {
+    font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 main {
     margin: 0 auto;
@@ -108,72 +125,68 @@ main .paragraf-1 {
 
 
 footer {
+    position: relative;
+    top: 0;
+    width: 100%;
     background-color: #F7F7F7;
-    color: #5C2A2D;
-    display: flex;
-    justify-content: center;
-    /* Alinha os itens horizontalmente */
-    align-items: center;
-    /* Alinha os itens verticalmente */
-    padding: 10px 0;
-    /* Espaçamento interno */
 }
 
 footer .container {
-    max-width: 1440px;
-    /* Reduz a largura máxima */
-    width: 100%;
-    /* Usa toda a largura disponível */
-    margin: 0 auto;
-    /* Centraliza o conteúdo */
     display: flex;
     justify-content: space-between;
-    /* Espaço igual entre os elementos */
+    padding: 0.5rem 6rem;
     align-items: center;
-    /* Alinha os itens verticalmente */
 }
 
-footer .content-1 nav a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 500;
-    color: #5C2A2D;
+footer .content-1 {
+    display: flex;
+    align-items: center;
+}
+
+footer .content-1 ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+footer .nav-item {
+    margin: 0 15px;
+}
+
+footer .nav-link {
     text-decoration: none;
-    padding: 5px 5px;
-    /* Espaçamento interno dos links */
-    border-radius: 5px;
-    /* Borda arredondada */
-    transition: font-size 0.3s, box-shadow 0.3s;
-    /* Adiciona transição para a mudança de tamanho da fonte e sombra */
+    font-size: 1.15rem;
+    color: #5C2A2D;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
 }
 
-footer .content-1 nav a:hover {
-    font-size: 16px;
-    /* Aumenta o tamanho da fonte no hover */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    /* Adiciona sombra no hover */
+/* Adicionando efeito de sombra no hover */
+footer .nav-item:hover .nav-link {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+footer .logo-1 {
+    width: 5rem;
+}
+
+footer .content-2 {
+    display: flex;
+    align-items: center;
+}
+
 
 footer .content-3 {
     display: flex;
     align-items: center;
 }
 
-footer .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    font-size: 12px;
-    margin-right: 10px;
-    /* Espaçamento entre o texto e a imagem */
-}
-
-
 footer .logo-2 {
-    width: 60px;
-    /* Reduz o tamanho da imagem */
-    border-radius: 10px;
-    /* Torna a imagem circular */
+    width: 5rem;
+    border-radius: 1rem;
 }
 
 .floating-buttons {
