@@ -57,7 +57,7 @@ header .content-2 ul {
 }
 
 header .nav-item {
-  margin: 0 15px;
+  margin: 0 1rem;
 }
 
 header .nav-link {
@@ -73,6 +73,14 @@ header .nav-link {
 header .nav-item:hover .nav-link {
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .mobile-menu-icon {
+  display: none;
+}
+
+header .mobile-menu {
+  display: none;
 }
 
 .wrapper {
@@ -101,21 +109,21 @@ section.module:last-child {
 }
 
 section.module h2 {
-  margin-bottom: 40px;
-  font-size: 40px;
+  margin-bottom: 5rem;
+  font-size: 2rem;
   color: #f7f7f7;
   font-weight: 900;
 }
 
 section.module.content {
-  padding: 10px 0;
-  padding-left: 100px;
-  padding-right: 800px;
+  padding: 1rem 0;
+  padding-left: 5rem;
+  padding-right: 40rem;
   text-align: left;
   background-image: url(../images/backCanvas.png);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
-  font-size: 20px;
+  font-style: normal;
+  font-size: 1.3rem;
   color: #f7f7f7;
 
 }
@@ -193,22 +201,12 @@ section.module.parallax-3 {
 section.module.parallax1 h1 {
   color: #FFF;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem;
   z-index: 50;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
   padding-top: 30%;
 
-}
-
-section.module.parallax2 h1 {
-  color: #FFF;
-  text-align: center;
-  font-size: 40px;
-  z-index: 50;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
-  padding-bottom: 30%;
 }
 
 
@@ -304,26 +302,68 @@ footer .logo-2 {
   /* Aumenta em 10% quando passa o mouse */
 }
 
-@media all and (max-width: 1360px) {
+@media screen and (max-width: 1360px) {
+
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+  }
+
+  header .container {
+    padding: 1.5rem 4rem;
+  }
+
+  header .nav-item {
+    display: none;
+  }
+
+  header .mobile-menu-icon {
+    display: block;
+  }
+
+  header .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  header .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  header .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  header .open {
+    display: block;
+  }
 
 
   section.module.content {
     padding: 10px 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: left;
     background-image: url(../images/backCanvas.png);
     background-size: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #f7f7f7;
 
   }
 
 
   section.module h2 {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   .module h2,
@@ -339,10 +379,36 @@ footer .logo-2 {
   section.module.parallax1 h1 {
     color: #FFF;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     z-index: 50;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     padding-top: 20%;
   }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .content-1 {
+    display: none;
+  }
+
+  footer .nav-link {
+    font-size: 0.5rem;
+  }
+
+  footer .nav-item:hover .nav-link {
+    font-size: 0.6rem;
+  }
+
+  footer .logo-2 {
+    width: 3rem;
+  }
+
+
 }

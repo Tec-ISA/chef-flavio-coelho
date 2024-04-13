@@ -56,7 +56,7 @@ header .content-2 ul {
 }
 
 header .nav-item {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 header .nav-link {
@@ -72,6 +72,14 @@ header .nav-link {
 header .nav-item:hover .nav-link {
     font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .mobile-menu-icon {
+    display: none;
+}
+
+header .mobile-menu {
+    display: none;
 }
 
 main {
@@ -253,7 +261,47 @@ footer .logo-2 {
 }
 
 @media all and (max-width: 1000px) {
+    header {
+        position: relative;
+        top: 0;
+        width: 100%;
+        background-color: #F7F7F7;
+        z-index: 1000;
+    }
 
+    header .container {
+        padding: 1.5rem 4rem;
+    }
+
+    header .nav-item {
+        display: none;
+    }
+
+    header .mobile-menu-icon {
+        display: block;
+    }
+
+    header .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    header .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    header .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    header .open {
+        display: block;
+    }
 
     main {
         background-color: #FFF;
@@ -338,6 +386,30 @@ footer .logo-2 {
 
     button[type]:hover {
         background-color: #45a049;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .content-1 {
+        display: none;
+    }
+
+    footer .nav-link {
+        font-size: 0.5rem;
+    }
+
+    footer .nav-item:hover .nav-link {
+        font-size: 0.6rem;
+    }
+
+    footer .logo-2 {
+        width: 3rem;
     }
 
 
