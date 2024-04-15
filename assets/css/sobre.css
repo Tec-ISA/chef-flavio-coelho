@@ -251,6 +251,10 @@ footer .logo-2 {
         cursor: pointer;
     }
 
+    header .icon {
+        width: 2rem;
+      }
+
     header .mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -274,6 +278,7 @@ footer .logo-2 {
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: 20%;
+        padding-bottom: 20rem;
     }
 
     main .container::before {
@@ -291,35 +296,19 @@ footer .logo-2 {
     }
 
     main .title-1 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     main .paragraf-1 {
-        font-size: 20px;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
-    footer .container {
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    footer .content-1 {
+    footer {
         display: none;
     }
 
-    footer .nav-link {
-        font-size: 0.5rem;
-    }
-
-    footer .nav-item:hover .nav-link {
-        font-size: 0.6rem;
-    }
-
-    footer .logo-2 {
-        width: 3rem;
+    footer .container {
+        display: none;
     }
 }

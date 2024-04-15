@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="197.000000pt" height="197.000000pt" viewBox="0 0 197.000000 197.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,197.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M250 1400 l0 -80 735 0 735 0 0 80 0 80 -735 0 -735 0 0 -80z"/>
+<path d="M250 985 l0 -85 735 0 735 0 0 85 0 85 -735 0 -735 0 0 -85z"/>
+<path d="M250 570 l0 -80 735 0 735 0 0 80 0 80 -735 0 -735 0 0 -80z"/>
+</g>
+</svg>

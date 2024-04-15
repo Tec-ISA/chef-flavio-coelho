@@ -324,16 +324,21 @@ footer .logo-2 {
     display: block;
   }
 
+  header .icon {
+    width: 2rem;
+  }
+
   header .mobile-menu-icon button {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
 
+
   header .mobile-menu ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:center;
     padding-bottom: 1rem;
   }
 
@@ -344,6 +349,7 @@ footer .logo-2 {
 
   header .open {
     display: block;
+    text-align: center;
   }
 
 
@@ -357,7 +363,7 @@ footer .logo-2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-size: 1.2rem;
-    color: #f7f7f7;
+    color: #F7F7F7;
 
   }
 
