@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: #242424;
+  color: #5C2A2D;
   background-color: #F7F7F7;
   font-family: sans-serif;
   word-wrap: break-word;
@@ -18,6 +18,7 @@ h6 {
   color: #000;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 header {
   position: relative;
@@ -62,16 +63,16 @@ header .nav-item {
 
 header .nav-link {
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: #5C2A2D;
   font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
 }
 
 /* Adicionando efeito de sombra no hover */
 header .nav-item:hover .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.52rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,6 +83,7 @@ header .mobile-menu-icon {
 header .mobile-menu {
   display: none;
 }
+
 
 .wrapper {
   width: 100%;
@@ -115,18 +117,20 @@ section.module h2 {
   font-weight: 900;
 }
 
+/*
 section.module.content {
   padding: 1rem 0;
   padding-left: 5rem;
   padding-right: 40rem;
   text-align: left;
-  background-image: url(../images/backCanvas.png);
+  background-color: #f7f7f7;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-size: 1.3rem;
-  color: #f7f7f7;
-
+  color: #5C2A2D;
 }
+*/
+
 
 section.module.parallax1 {
   display: flex;
@@ -173,26 +177,29 @@ section.module.parallax2 {
   -o-background-size: cover;
 }
 
+/*
 section.module.parallax2:after {
   content: "";
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 8;
-  /*Efeito Background apos propaganda*/
-  background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-  background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-}
+
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+}*/
 
 
 section.module.parallax-1 {
-  background-image: url(../images/Ilha-Gastronomica/ilha-gastronomica\ \(35\).JPG);
+  background-image: url(../images/Ilha-Gastronomica/ilha-gastronomica\ \(3\).jpeg);
 }
 
+/*
 section.module.parallax-2 {
   background-image: url(../images/Ilha-Gastronomica/ilha-gastronomica\ \(34\).JPG);
 }
+*/
 
 section.module.parallax-3 {
   background-image: url();
@@ -205,7 +212,7 @@ section.module.parallax1 h1 {
   z-index: 50;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
-  padding-top: 30%;
+  padding-top: 10%;
 
 }
 
@@ -220,7 +227,7 @@ footer {
 footer .container {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 6rem;
+  padding: 1rem 6rem;
   align-items: center;
 }
 
@@ -242,16 +249,16 @@ footer .nav-item {
 
 footer .nav-link {
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: #5C2A2D;
   font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-style: normal;
 }
 
 /* Adicionando efeito de sombra no hover */
 footer .nav-item:hover .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.52rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -340,6 +347,8 @@ footer .logo-2 {
     flex-direction: column;
     text-align:center;
     padding-bottom: 1rem;
+    margin-block-start: 0rem;
+    padding-inline-start: 0rem;
   }
 
   header .mobile-menu .nav-item {
@@ -353,6 +362,7 @@ footer .logo-2 {
   }
 
 
+  /*
   section.module.content {
     padding: 10px 0;
     padding-left: 1rem;
@@ -364,9 +374,8 @@ footer .logo-2 {
     font-style: italic;
     font-size: 1.2rem;
     color: #F7F7F7;
-
   }
-
+  */
 
   section.module h2 {
     font-size: 2rem;

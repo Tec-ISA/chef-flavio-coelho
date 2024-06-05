@@ -10,10 +10,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
 
-    <title>Portfólio</title>
+    <title>Cases</title>
+    
 </head>
 
 <body>
@@ -32,29 +33,68 @@
                 <ul>
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre o Chef</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Cases</a></li>
                     <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
 
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/images/icones/menu_white_36dp.png"
+                        alt="Menu"></button>
+            </div>
+
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre o Chef</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Cases</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
 
     </header>
 
     <main>
 
-        <div class="carousel">
-            <div class="slide">
-              <img src="assets/images/Carrosel/ilha-gastronomica (34).JPG" alt="Ilha-gastronomica">
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="assets/images/Carrosel/ilha-gastronomica -6.JPG" alt="Brunch" />
+                    <img id="slide-2" src="assets/images/Carrosel/brunch-2.JPG" alt="Brunch" />
+                    <img id="slide-3" src="assets/images/Carrosel/brunch-3.JPG" alt="Brunch" />
+                    <img id="slide-4" src="assets/images/Carrosel/brunch-4.JPG" alt="Brunch" />
+                    <img id="slide-5" src="assets/images/Carrosel/ilha-frutos-do-mar-1.JPG" alt="Brunch" />
+                    <img id="slide-6" src="assets/images/Carrosel/ilha-frutos-do-mar-2.JPG" alt="Brunch" />
+                    <img id="slide-7" src="assets/images/Carrosel/ilha-frutos-do-mar-3.JPG" alt="Brunch" />
+                    <img id="slide-8" src="assets/images/Carrosel/ilha-gastronomica -2.JPG" alt="Brunch" />
+                    <img id="slide-9" src="assets/images/Carrosel/ilha-gastronomica -3.jpeg" alt="Brunch" />
+                    <img id="slide-10" src="assets/images/Carrosel/ilha-gastronomica -4.jpeg" alt="Brunch" />
+
+
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
+                </div>
             </div>
-            <div class="slide">
-              <img src="assets/images/Carrosel/ilha-gastronomica (35).JPG" alt="Ilha-gastronomica">
-            </div>
-            <div class="slide">
-              <img src="assets/images/Carrosel/brunch (11).JPG" alt="Image 3">
-            </div>
-            <!-- Add more slides as needed -->
-          </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
 
     </main>
 
@@ -66,7 +106,7 @@
                 <ul>
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre o Chef</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Cases</a></li>
                     <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
@@ -91,6 +131,8 @@
 
     <script src="assets/js/floating-buttons.js"></script>
     <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/nav-bar-responsive.js"></script>
+    <script src="assets/js/modal.js"></script>
 
 </body>
 

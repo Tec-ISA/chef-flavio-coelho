@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    background: linear-gradient(72deg, #f7f7f7 0.1%, #f7f7f7 99%);
 }
 
 h1,
@@ -57,24 +58,132 @@ header .content-2 ul {
 }
 
 header .nav-item {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 header .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: #5C2A2D;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
 }
 
 /* Adicionando efeito de sombra no hover */
 header .nav-item:hover .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.52rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+header .mobile-menu-icon {
+    display: none;
+    color: #5C2A2D;
+}
+
+header .mobile-menu {
+    display: none;
+}
+
+
+main .container {
+    padding: 2rem;
+    background-color: #F7F7F7;
+    padding-bottom: 3rem;
+}
+
+main .slider-wrapper {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+main .slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.85);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    /* Hide scrollbar IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+main .slider::-webkit-scrollbar {
+    display: none;
+}
+
+main .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+main .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+main .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.9;
+    transition: opacity ease 250ms;
+}
+
+main .slider-nav a:hover {
+    opacity: 1;
+}
+
+/* Estilos do modal */
+main .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+main .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+main .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main .close:hover,
+main .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 footer {
     position: relative;
@@ -86,7 +195,7 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 6rem;
+    padding: 1rem 6rem;
     align-items: center;
 }
 
@@ -108,16 +217,16 @@ footer .nav-item {
 
 footer .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: #5C2A2D;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
 }
 
 /* Adicionando efeito de sombra no hover */
 footer .nav-item:hover .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.52rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -140,7 +249,6 @@ footer .logo-2 {
     width: 5rem;
     border-radius: 1rem;
 }
-
 
 .floating-buttons {
     position: fixed;
@@ -167,4 +275,98 @@ footer .logo-2 {
 .floating-buttons a:hover {
     transform: scale(1.5);
     /* Aumenta em 10% quando passa o mouse */
+}
+
+@media screen and (max-width: 1360px) {
+
+    header {
+        position: relative;
+        top: 0;
+        width: 100%;
+        background-color: #F7F7F7;
+        z-index: 1000;
+    }
+
+    header .container {
+        padding: 1.5rem 4rem;
+    }
+
+    header .nav-item {
+        display: none;
+    }
+
+    header .mobile-menu-icon {
+        display: block;
+        color: #5C2A2D;
+    }
+
+    header .icon {
+        width: 2rem;
+    }
+
+    header .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    header .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-block-start: 0rem;
+        padding-inline-start: 0rem;
+    }
+
+    header .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    header .open {
+        display: block;
+        text-align: center;
+    }
+
+    main .container {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+    
+    main .modal-content {
+        width: 100%;
+    }
+
+
+    /*footer .container {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .content-1 {
+        display: none;
+    }
+
+    footer .nav-link {
+        font-size: 0.5rem;
+    }
+
+    footer .nav-item:hover .nav-link {
+        font-size: 0.6rem;
+    }
+
+    footer .logo-2 {
+        width: 3rem;
+    }*/
+
+    footer .container {
+        display: none;
+    }
+
+
 }

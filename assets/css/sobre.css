@@ -24,63 +24,64 @@ header {
     width: 100%;
     background-color: #F7F7F7;
     z-index: 1000;
-}
-
-header .container {
+  }
+  
+  header .container {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 6rem;
     align-items: center;
-}
-
-header .content-1 {
+  }
+  
+  header .content-1 {
     display: flex;
     align-items: center;
-
-}
-
-header .logo-1 {
+  
+  }
+  
+  header .logo-1 {
     width: 5rem;
-}
-
-header .content-2 {
+  }
+  
+  header .content-2 {
     display: flex;
     align-items: center;
-}
-
-header .content-2 ul {
+  }
+  
+  header .content-2 ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
-}
-
-header .nav-item {
+  }
+  
+  header .nav-item {
     margin: 0 1rem;
-}
-
-header .nav-link {
+  }
+  
+  header .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: #5C2A2D;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-}
-
-/* Adicionando efeito de sombra no hover */
-header .nav-item:hover .nav-link {
-    font-size: 1.2rem;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+  }
+  
+  /* Adicionando efeito de sombra no hover */
+  header .nav-item:hover .nav-link {
+    font-size: 1.52rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header .mobile-menu-icon {
+  }
+  
+  header .mobile-menu-icon {
     display: none;
-}
-
-header .mobile-menu {
+  }
+  
+  header .mobile-menu {
     display: none;
-}
+  }
+  
 
 
 main {
@@ -117,18 +118,18 @@ main .content {
 }
 
 main .title-1 {
-    font-size: 60px;
+    font-size: 5rem;
     color: #5C2A2D;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-family: "Dancing Script", cursive;
 }
 
 main .paragraf-1 {
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    font-size: 1.6rem;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -142,7 +143,7 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 6rem;
+    padding: 1rem 6rem;
     align-items: center;
 }
 
@@ -164,16 +165,16 @@ footer .nav-item {
 
 footer .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: #5C2A2D;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
 }
 
 /* Adicionando efeito de sombra no hover */
 footer .nav-item:hover .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.52rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -226,50 +227,54 @@ footer .logo-2 {
 
 @media all and (max-width: 1360px) {
     header {
-        position: relative;
-        top: 0;
-        width: 100%;
-        background-color: #F7F7F7;
-        z-index: 1000;
-    }
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #F7F7F7;
+    z-index: 1000;
+  }
 
-    header .container {
-        padding: 1.5rem 4rem;
-    }
+  header .container {
+    padding: 1.5rem 4rem;
+  }
 
-    header .nav-item {
-        display: none;
-    }
+  header .nav-item {
+    display: none;
+  }
 
-    header .mobile-menu-icon {
-        display: block;
-    }
+  header .mobile-menu-icon {
+    display: block;
+  }
 
-    header .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
+  header .icon {
+    width: 2rem;
+  }
 
-    header .icon {
-        width: 2rem;
-      }
+  header .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-    header .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
 
-    header .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
+  header .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding-bottom: 1rem;
+    margin-block-start: 0rem;
+    padding-inline-start: 0rem;
+  }
 
-    header .open {
-        display: block;
-    }
+  header .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  header .open {
+    display: block;
+    text-align: center;
+  }
 
 
     main .container {
@@ -296,12 +301,12 @@ footer .logo-2 {
     }
 
     main .title-1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     main .paragraf-1 {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: 400;
     }
 
     footer {
