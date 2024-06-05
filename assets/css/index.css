@@ -208,10 +208,10 @@ section.module.parallax-3 {
 section.module.parallax1 h1 {
   color: #FFF;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   z-index: 50;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
+  font-family: "Lobster", sans-serif;
+  font-style: normal;
   padding-top: 10%;
 
 }
@@ -394,10 +394,10 @@ footer .logo-2 {
   section.module.parallax1 h1 {
     color: #FFF;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     z-index: 50;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
     padding-top: 20%;
   }
 
