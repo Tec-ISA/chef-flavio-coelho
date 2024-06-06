@@ -1,0 +1,15 @@
+# Habilitar o módulo de reescrita
+RewriteEngine On
+
+# Redirecionar index.html para home
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ /home [R=301,L]
+
+# Redirecionar URLs com .html para URLs sem .html
+RewriteCond %{THE_REQUEST} \s/([^\s]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Reescrever URLs amigáveis para adicionar .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
